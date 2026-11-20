@@ -1,0 +1,5 @@
+sessions.json
+*.tmp
+*.exe
+gpui-kit.d.ts
+jsconfig.json

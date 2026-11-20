@@ -1,0 +1,5 @@
+# New terminals and terminals rebuilt after a reboot start with this shell.
+# herdr-shell.ps1 = normal PowerShell + herdr's prompt hook, and resumes the Claude
+# session that terminal had (see herdr-resume/ in this repo).
+# Replace <USER> with your Windows user name (TOML does not expand %USERPROFILE%).
+shell = ["powershell.exe", "-NoLogo", "-NoExit", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\<USER>\\.claude\\herdr-resume\\herdr-shell.ps1"]
